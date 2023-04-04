@@ -1,0 +1,37 @@
+<html>
+<head> 
+    <title> My first Website!!
+    </title> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+
+<body style="background-color:peru;"> 
+    
+    <h1 style="color:darkorchid;">Sup gang !!</h1>
+    <h2 style="color:darkorchid;"> Sup gang !!</h2> 
+    <p style="color:darkorchid;"> how are you?</p> 
+    <p style="color:darkorchid;"> i'm good, thanks. <br> how about you?</p>  
+
+    <img src="img/download.png" width="200"height="200"/>  
+
+    <img id="donut1" src="img/donut_1.png" onmousedown="this.src='img/donut_2.png';" onmouseup="this.scr='img/donut_1.png';" width="200" height="200"/>  
+    <img id="donut2" src="img/donut_2.png" onmousedown="this.src='img/donut_1.png';" onmouseup="this.scr='img/donut_2.png';" width="200" height="200"/>  
+    <img id="donut3" src="img/donut_3.png" onmousedown="this.src='img/donut_2.png';" onmouseup="this.scr='img/donut_3.png';" width="200" height="200"/>   
+
+    <script> 
+
+        var sound1 = new buzz.sound("sound/glitch1.mp3");
+        var sound2 = new buzz.sound("sound/glitch2.mp3");
+        var sound3 = new buzz.sound("sound/glitch3.mp3");
+
+        window.onload = function() { 
+            document.getElementById('donut1').addEventListener('mouseover', function () {sound1.play();}); 
+            document.getElementById('donut2').addEventListener('mouseover', function () {sound2.play();}); 
+            document.getElementById('donut3').addEventListener('mouseover', function () {sound3.play();}); 
+        };
+
+    </script> 
+
+</body>
+
+</html>
